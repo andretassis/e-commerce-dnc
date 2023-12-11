@@ -1,1 +1,31 @@
 @use '../../sass/variables' as *;
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: $gray;
+    padding: 15px;
+
+    .nav__logo {
+        width: 100px;
+        padding-left: 25px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        list-style: none;
+        margin-left: -35%;
+        font-size: 17px;
+    }
+
+    .nav__cart {
+        display: flex;
+        margin-right: 25px;
+    }
+
+    p {
+        padding: 13px;
+    }
+}
