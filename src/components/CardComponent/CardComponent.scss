@@ -1,1 +1,22 @@
 @use '../../sass/variables' as *;
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid $gray;
+    width: 300px;
+
+    p {
+        margin: 15px 0;
+    }
+
+    button {
+        background-color: $blue;
+        padding: 10px;
+        color: $white;
+        font-weight: 500;
+        border: none;
+        border-radius: $main-border-radius;
+    }
+}
