@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client'
 import './index.scss'
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import App from './App';
+import Login from './views/Login/Login';
+import Cart from './views/Cart/Cart';
 
 const router = createBrowserRouter([
   {
@@ -15,7 +17,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/login",
-    element: <div>Login</div>,
+    element: <Login />,
   },
   {
     path: "/product/:productID",
@@ -23,7 +25,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/pay/:payID",
-    element: <div>Tela de pagamento</div>,
+    element: <Cart />,
   },
 
 ]);
