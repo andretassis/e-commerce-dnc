@@ -26,7 +26,7 @@ const router = createBrowserRouter([
     element: <Cart data={PRODUCTS_MOCK} />,
   },
   {
-    path: "/pay/:payID",
+    path: "/pay/:payId",
     element: <Checkout data={PRODUCTS_MOCK} />,
   },
 ]);

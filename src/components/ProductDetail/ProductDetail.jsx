@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from 'react-router-dom'
 import './ProductDetail.scss'
 
 const ProductDetail = ({data}) => {
@@ -81,7 +82,7 @@ const ProductDetail = ({data}) => {
             </div>
 
             <div>
-                <button>Finalizar compra</button>
+                <Link to={`/pay/${data.id}`}><button>Finalizar compra</button></Link>
             </div>
         </section>
     </section>

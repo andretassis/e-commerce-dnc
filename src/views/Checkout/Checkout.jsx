@@ -1,7 +1,13 @@
+/* eslint-disable react/prop-types */
+import { Link, useParams } from "react-router-dom"
 import Header from "../../components/Header/Header"
 import './Checkout.scss'
 
-const Checkout = () => {
+const Checkout = ({data}) => {
+  const {payId} = useParams()
+  const selectedProduct = data.find((product) => product.id == payId)
+
+
   return (
     <>
     <Header />
@@ -29,19 +35,20 @@ const Checkout = () => {
         <label>Cartão de crédito</label>        
         </div>
       </div>
-      <button>Enviar pedido</button>
+      <Link to="/home"><button>Enviar pedido</button></Link>
     </section>
 
     <section className="checkout__right">
       <h3>Resumo do pedido:</h3>
       <div className="checkout__right--products">
         <p>Produtos:</p>
-        <p><strong>R$ 150,00</strong></p>
+        <p className="product--name">{selectedProduct.title}</p>
+        <p><strong>{selectedProduct.price}</strong></p>
       </div>
       <hr />
       <div className="checkout__right--total">
         <p>Total:</p>
-        <p><strong>R$ 150,00</strong></p>
+        <p><strong>{selectedProduct.price}</strong></p>
       </div>
     </section>
     </section>
