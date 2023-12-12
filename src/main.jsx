@@ -5,13 +5,14 @@ import Login from './views/Login/Login';
 import Cart from './views/Cart/Cart';
 import Home from './views/Home/Home';
 import { PRODUCTS_MOCK } from './mock/products.mock';
+import Checkout from './views/Checkout/Product';
 import './index.scss'
 
 const router = createBrowserRouter([
-  // {
-  //   path: "/",
-  //   element: <Home data={PRODUCTS_MOCK} text="aaaa" />,
-  // },
+  {
+    path: "/",
+    element: <Login data={PRODUCTS_MOCK} />,
+  },
   {
     path: "/home",
     element: <Home data={PRODUCTS_MOCK} />,
@@ -24,10 +25,10 @@ const router = createBrowserRouter([
     path: "/products/:productId",
     element: <Cart data={PRODUCTS_MOCK} />,
   },
-  // {
-  //   path: "/pay/:payID",
-  //   element: <Cart data={PRODUCTS_MOCK} />,
-  // },
+  {
+    path: "/pay/:payID",
+    element: <Checkout data={PRODUCTS_MOCK} />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

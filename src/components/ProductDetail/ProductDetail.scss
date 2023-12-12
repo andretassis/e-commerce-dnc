@@ -76,7 +76,7 @@
         flex-direction: column;
         gap: 15px;
 
-        p {
+        &-p {
             font-size: 25px;
             font-weight: 600;
         }
@@ -86,21 +86,13 @@
         }
 
         .detail__info--color {
-            background-color: black;
-            width: 40px;
-            height: 40px;
-            border-radius: $main-border-radius;
-            cursor: pointer;
+            display: flex;
+            gap: 10px;
         }
 
         .detail__info--size {
-            background-color: white;
-            border: 1px solid black;
-            width: 40px;
-            height: 40px;
-            border-radius: $main-border-radius;
-            text-align: center;
-            cursor: pointer;
+            display: flex;
+            gap: 10px
         }
     }
 
