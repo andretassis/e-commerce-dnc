@@ -1,0 +1,94 @@
+@use '../../sass/variables' as *;
+
+.checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 50px;
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+
+        &--info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--pay {
+            display: flex;
+            flex-direction: column;
+        }
+
+        span {
+            margin: 10px 0;
+        }
+
+        .checkout--input-text {
+            margin: 5px 0 15px 0;
+            width: 500px;
+            padding: 10px;
+            border-radius: $main-border-radius;
+            border: 2px solid $border-color;
+        }
+
+        .checkout--input-text::placeholder {
+            font-size: 11px;
+        }
+
+        .pay--type {
+            color: $border-color;
+            margin: 5px 0;
+        }
+
+        label {
+            margin-left: 5px;
+        }
+
+        button {
+            background-color: $blue;
+            padding: 10px;
+            color: $white;
+            font-weight: 700;
+            border: none;
+            border-radius: $main-border-radius;
+            margin-top: 35px;
+            cursor: pointer;
+        }
+    
+        button:hover {
+            background-color: $blue-hover;
+            transform: translateY(-2px);
+            transition: 0.2s;  
+        }
+    }
+
+    &__right {
+        align-self: flex-start;
+        margin-left: 200px;
+        border: 2px solid $gray;
+        padding: 10px;
+        width: 360px;
+        box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    h3 {
+        padding: 10px 50px 10px 10px;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        padding: 15px;
+    }
+    .checkout__right--products {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .checkout__right--total {
+        display: flex;
+        justify-content: space-between;
+    }
+}

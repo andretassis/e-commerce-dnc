@@ -23,7 +23,6 @@ const ProductDetail = ({data}) => {
                 <hr />
             </div>
 
-
 {/* Como no mock a prop colors também era uma lista e eu queria a (,) entre os elementos */}
 {/* Fiz o primeiro IF ternário que se o array de colors tiver só um elemento, ele pegará esse elemento */}
 {/* Se não, ele fará um outro map com outro IF ternário */}

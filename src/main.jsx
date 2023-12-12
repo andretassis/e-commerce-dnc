@@ -5,7 +5,7 @@ import Login from './views/Login/Login';
 import Cart from './views/Cart/Cart';
 import Home from './views/Home/Home';
 import { PRODUCTS_MOCK } from './mock/products.mock';
-import Checkout from './views/Checkout/Product';
+import Checkout from './views/Checkout/Checkout';
 import './index.scss'
 
 const router = createBrowserRouter([
