@@ -5,7 +5,6 @@ import Login from './views/Login/Login';
 import Cart from './views/Cart/Cart';
 import Home from './views/Home/Home';
 import { PRODUCTS_MOCK } from './mock/products.mock';
-import Product from './views/Product/Product';
 import './index.scss'
 
 const router = createBrowserRouter([
@@ -22,21 +21,13 @@ const router = createBrowserRouter([
     element: <Login />,
   },
   {
-    path: "/products/:productID",
+    path: "/products/:productId",
     element: <Cart data={PRODUCTS_MOCK} />,
   },
-  {
-    path: "/pay/:payID",
-    element: <Cart data={PRODUCTS_MOCK} />,
-  },
-
-  //APAGAR ISSO AQUI DEPOIS E ACERTAR AS ROTAS
-  {
-    path: "/",
-    element: <Product />,
-  },
-
-
+  // {
+  //   path: "/pay/:payID",
+  //   element: <Cart data={PRODUCTS_MOCK} />,
+  // },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

@@ -1,17 +1,18 @@
+/* eslint-disable react/prop-types */
 
 import './ProductDetail.scss'
 
-const ProductDetail = () => {
+const ProductDetail = ({data}) => {
   return (
     <section className="detail">  
         <section className="detail__image">
             <div className="detail__image--card">
-                <img src='../../../public/product-1.png' alt='ERRO' />
-                <p className="detail__image--p">Cropped manga preta |  by DNC</p>
+                <img src={data.imgPathDetail} alt='ERRO' />
+                <p className="detail__image--p">{data.title}</p>
             </div>
             <div>    
                 <h4>Descrição</h4>
-                <p className="detail__text--p">Cropped manga preta |  by DNC</p>
+                <p className="detail__text--p">{data.title}</p>
                 <hr />
             </div>
         </section>
@@ -23,7 +24,7 @@ const ProductDetail = () => {
             </div>
 
             <div className="detail__info--price">
-                <p>R$ 150,00</p>
+                <p>{data.price}</p>
                 <span>Cor: preta</span>
                 <div className="detail__info--color">P</div>
                 <span>Tamanho:</span>
