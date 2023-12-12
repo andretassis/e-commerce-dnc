@@ -5,10 +5,18 @@
     align-items: center;
     flex-direction: column;
     border: 1px solid $gray;
+    border-radius: $main-border-radius;
     width: 300px;
+    margin: 50px;
+
+    img {
+        width: 298px;
+        border-radius: $main-border-radius;
+    }
 
     p {
         margin: 15px 0;
+        font-size: 15px;
     }
 
     button {
@@ -18,5 +26,6 @@
         font-weight: 500;
         border: none;
         border-radius: $main-border-radius;
+        margin-bottom: 15px;
     }
 }
