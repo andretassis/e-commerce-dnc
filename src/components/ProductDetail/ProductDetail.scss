@@ -1,1 +1,107 @@
 @use '../../sass/variables' as *;
+
+.detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 70px 0;
+    gap: 80px;
+
+    .detail__image {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 10px;
+    }
+
+    img {
+        width: 248px;
+        border-radius: $main-border-radius;
+    }
+
+
+    .detail__image--card {
+        text-align: center;
+        border: 1px solid $gray;
+        border-radius: $main-border-radius;
+        width: 250px;
+        margin: 50px;
+    }
+
+    .detail__image--p {
+        padding: 15px 0;
+        font-size: 13px;
+    }
+
+    .detail__text--p {
+        padding: 10px 0 25px 0;
+        font-size: 15px;
+    }
+
+    .detail__info {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 500px;
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    button {
+        background-color: $blue;
+        font-size: 18px;
+        padding: 10px;
+        color: $white;
+        font-weight: 700;
+        border: none;
+        border-radius: $main-border-radius;
+        margin-top: 55px;
+        cursor: pointer;
+        width: 500px;
+    }
+
+    button:hover {
+        background-color: $blue-hover;
+        transform: translateY(-2px);
+        transition: 0.2s;  
+    }
+
+    .detail__info--price {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        p {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        span {
+            font-size: 18px;
+        }
+
+        .detail__info--color {
+            background-color: black;
+            width: 40px;
+            height: 40px;
+            border-radius: $main-border-radius;
+            cursor: pointer;
+        }
+
+        .detail__info--size {
+            background-color: white;
+            border: 1px solid black;
+            width: 40px;
+            height: 40px;
+            border-radius: $main-border-radius;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+
+}

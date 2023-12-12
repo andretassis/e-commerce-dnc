@@ -10,14 +10,14 @@ const Home = ({data}) => {
     <>
      <Nav />
      <Search />
-     
-      <div className="home__products">
+  
+    <div className="home__products">
         {data.map((product) => 
           <CardComponent 
             key={product.id} 
             data={product}
         />)}
-      </div>
+    </div>
       
     </>
   )

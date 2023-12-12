@@ -1,9 +1,14 @@
-import Header from "../../components/Header/Header"
+import Nav from "../../components/Nav/Nav"
+import ProductDetail from "../../components/ProductDetail/ProductDetail"
+import Search from "../../components/Search/Search"
+import './Cart.scss'
 
 const Cart = () => {
   return (
     <>
-      <Header />
+      <Nav />
+      <Search />
+      <ProductDetail />
     </>
   )
 }

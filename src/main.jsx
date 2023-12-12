@@ -9,10 +9,10 @@ import Product from './views/Product/Product';
 import './index.scss'
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home data={PRODUCTS_MOCK} text="aaaa" />,
-  },
+  // {
+  //   path: "/",
+  //   element: <Home data={PRODUCTS_MOCK} text="aaaa" />,
+  // },
   {
     path: "/home",
     element: <Home data={PRODUCTS_MOCK} />,
@@ -29,6 +29,13 @@ const router = createBrowserRouter([
     path: "/pay/:payID",
     element: <Cart data={PRODUCTS_MOCK} />,
   },
+
+  //APAGAR ISSO AQUI DEPOIS E ACERTAR AS ROTAS
+  {
+    path: "/",
+    element: <Cart />,
+  },
+
 
 ]);
 
