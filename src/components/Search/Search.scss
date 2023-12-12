@@ -1,0 +1,33 @@
+@use '../../sass/variables' as *;
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    input {
+        width: 800px;
+        padding: 10px;
+        border-radius: $main-border-radius;
+        border: 2px solid $border-color;
+    }
+
+    input::placeholder {
+        padding-left: 40px;
+    }
+
+    .search__user-icon {
+        margin: 0px 15px;
+    }
+
+    .search__input {
+        position: relative;
+    }
+
+    .search__search-icon {
+        position: absolute;
+        left: 15px;
+        top: 15%;
+    }
+}
