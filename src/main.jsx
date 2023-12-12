@@ -23,7 +23,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/products/:productID",
-    element: <Product data={PRODUCTS_MOCK} />,
+    element: <Cart data={PRODUCTS_MOCK} />,
   },
   {
     path: "/pay/:payID",
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
   //APAGAR ISSO AQUI DEPOIS E ACERTAR AS ROTAS
   {
     path: "/",
-    element: <Cart />,
+    element: <Product />,
   },
 
 
