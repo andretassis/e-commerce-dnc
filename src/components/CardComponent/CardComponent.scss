@@ -27,5 +27,12 @@
         border: none;
         border-radius: $main-border-radius;
         margin-bottom: 15px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: $blue-hover;
+        transform: translateY(-2px);
+        transition: 0.2s;  
     }
 }

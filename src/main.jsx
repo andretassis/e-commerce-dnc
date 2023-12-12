@@ -1,19 +1,21 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.scss'
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Login from './views/Login/Login';
 import Cart from './views/Cart/Cart';
 import Home from './views/Home/Home';
+import { PRODUCTS_MOCK } from './mock/products.mock';
+import Product from './views/Product/Product';
+import './index.scss'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element: <Home data={PRODUCTS_MOCK} text="aaaa" />,
   },
   {
     path: "/home",
-    element: <Home />,
+    element: <Home data={PRODUCTS_MOCK} />,
   },
   {
     path: "/login",
@@ -21,11 +23,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/product/:productID",
-    element: <div>Tela de produtos</div>,
+    element: <Product data={PRODUCTS_MOCK} />,
   },
   {
     path: "/pay/:payID",
-    element: <Cart />,
+    element: <Cart data={PRODUCTS_MOCK} />,
   },
 
 ]);
